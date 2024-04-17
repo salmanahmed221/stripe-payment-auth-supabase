@@ -50,7 +50,7 @@ export default function Page() {
       <h1 className="text-4xl text-black tracking-tighter font-bold">
         Login to your account
       </h1>
-      <div className="w-3/12">
+      <div className="md:w-3/12">
         <div className="my-4">
           <label htmlFor="email" className="py-1">
             Email Address

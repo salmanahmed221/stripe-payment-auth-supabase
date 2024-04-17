@@ -13,8 +13,10 @@ export default function Home() {
     router.push("/login");
   };
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-7xl font-bold tracking-tighter">Home Page</h1>
+    <main className="flex min-h-screen flex-col items-center justify-center md:p-24">
+      <h1 className="md:text-7xl text-5xl font-bold tracking-tighter">
+        Home Page
+      </h1>
       <div className="flex items-center space-x-5">
         <button
           onClick={handleSignOut}
