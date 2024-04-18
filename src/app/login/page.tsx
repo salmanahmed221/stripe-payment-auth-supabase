@@ -36,7 +36,9 @@ export default function Page() {
     });
 
     if (data.user) {
-      alert("Account Created Successfully");
+      alert(
+        "Account Created Successfully, Please check your email for verification"
+      );
       router.refresh();
       setLoading(false);
       router.push("/");
@@ -46,8 +48,8 @@ export default function Page() {
     }
   };
   return (
-    <div className="w-full h-screen flex-col flex justify-center items-center">
-      <h1 className="text-4xl text-black tracking-tighter font-bold">
+    <div className="w-full h-screen flex-col flex justify-center items-center p-4">
+      <h1 className="md:text-4xl text-[35px] text-black tracking-tighter font-bold">
         Login to your account
       </h1>
       <div className="md:w-3/12">
@@ -82,14 +84,14 @@ export default function Page() {
           className="border-none h-12 mb-3 rounded-md justify-center flex items-center text-white bg-indigo-600 hover:bg-indigo-500 transition duration-200 shadow-lg shadow-indigo-600/35 w-full"
         >
           Sign in
-          {loading && <Loader2 className="w-5 h-5 ml-3 animate-spin" />}
+          {/* {loading && <Loader2 className="w-5 h-5 ml-3 animate-spin" />} */}
         </button>
         <button
           onClick={handleSignup}
           className="border-none h-12 rounded-md justify-center flex items-center text-white bg-purple-600 hover:bg-purple-500 transition duration-200 shadow-lg shadow-purple-600/35 w-full"
         >
           Sign up
-          {loading && <Loader2 className="w-5 h-5 ml-3 animate-spin" />}
+          {/* {loading && <Loader2 className="w-5 h-5 ml-3 animate-spin" />} */}
         </button>
       </div>
     </div>
